@@ -1,0 +1,54 @@
+fieldset {
+  height: 50%;
+  width: 60%;
+
+  color: antiquewhite;
+  font-size: 2em;
+
+  border-radius: 10px 10px 0px 0px;
+  border: 5px solid antiquewhite;
+  border-bottom: none;
+
+  display: flex;
+  flex-direction: column;
+
+  padding: 20px;
+
+  overflow-y: scroll;
+
+  legend {
+    text-shadow: 0 0 10px #ff7300, 0 0 20px #e600ff;
+  }
+}
+
+input {
+  min-height: 30px;
+  background-color: #312d49;
+  border: 1px solid antiquewhite;
+  color: antiquewhite;
+  text-align: center;
+}
+
+#adicionar {
+  margin: 20px;
+  background-color: transparent;
+  border: 2px solid antiquewhite;
+  color: antiquewhite;
+
+  transition-duration: 0.2s;
+}
+
+#adicionar:hover {
+  border-image: linear-gradient(to right, #ff7300, #e600ff);
+
+  border-image-slice: 1;
+
+  cursor: pointer;
+}
+
+@media (max-width: 1000px) {
+  fieldset {
+    height: 300px;
+    width: 90%;
+  }
+}

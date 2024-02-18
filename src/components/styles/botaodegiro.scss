@@ -1,0 +1,31 @@
+#giro {
+  width: 60%;
+  height: 10%;
+
+  border-radius: 0px 0px 10px 10px;
+
+  font-size: 1.5em;
+
+  background-color: transparent;
+  border: 5px solid antiquewhite;
+  color: antiquewhite;
+
+  text-shadow: 0 0 10px #ff7300, 0 0 20px #e600ff;
+
+  transition-duration: 0.5s;
+}
+
+#giro:hover {
+  font-weight: 500;
+  background: linear-gradient(to right, #ff7300, #e600ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+@media (max-width: 1000px) {
+  #giro {
+    height: 80px;
+    width: 90%;
+  }
+}
